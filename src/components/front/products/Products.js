@@ -1,8 +1,24 @@
 import React from 'react'
+import './Products.css'
 
-const Products = () => {
+const Products = ({ productItems, handleAddProduct }) => {
   return (
-    <div>Products</div>
+    <div className="products">
+      {productItems.map((item, index) => (
+        <div className="card">
+          <div>
+            <img className="product-image" src={item.image} alt="" />
+          </div>
+          <div>
+            <h3 className="product-name">{item.name}</h3>
+          </div>
+          <div className="product-price">$ {item.price}</div>
+          <div>
+            <button className="product-add-button" onClick={() => handleAddProduct(item)}>Add to Cart</button>
+          </div>
+        </div>
+      ))}
+    </div>
   )
 }
 
