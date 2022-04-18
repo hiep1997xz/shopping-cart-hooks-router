@@ -15,7 +15,7 @@ const Cart = ({
   return (
     <div className="cart-item">
       <div className="cart-item-header">Cart Item</div>
-      <div className="clear-card">
+      <div className="clear-cart">
         {cartItems.length >= 1 && (
           <button
             className="clear-car-button"
