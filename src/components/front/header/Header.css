@@ -38,3 +38,11 @@
 .header-links ul li a:hover {
   color: #fffc3c;
 }
+
+.cart-length{
+  margin: 3px;
+  font-size: 14px;
+  font-weight: 700;
+  vertical-align: super;
+  color: #fdd101;
+}

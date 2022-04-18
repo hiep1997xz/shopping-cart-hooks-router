@@ -44,7 +44,7 @@ function App() {
 
   return (
     <div>
-      <Header />
+      <Header cartItems={cartItems}/>
       <Router
         productItems={productItems}
         cartItems={cartItems}
